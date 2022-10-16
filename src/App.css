@@ -1,0 +1,87 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #f0f0f3;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  width: 950px;
+  padding: 50px;
+  background-color: #f0f0f3;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 50px;
+  box-shadow: 10px 10px 21px #d3d3d6,
+              -10px -10px 21px #fff;
+}
+
+.item {
+  width: 150px;
+  height: 150px;
+  background: #f0f0f3;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 40px #d3d3d6,
+              -5px -5px 40px #d3d3d6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title {
+  width: 120px;
+  height: 20px;
+  border-radius: 10px;
+  font-size: 10px;
+  text-align: center;
+}
+
+.loadtitle {
+  animation: loadtitle 1.5s linear infinite;
+  transition: 3s all linear;
+  background-color: darkgrey;
+}
+
+.loadimg {
+  width: 120px;
+  height: 100px;
+  border-radius: 10px;
+  animation: loadtitle 1.5s linear infinite;
+  transition: 3s all linear;
+  background-color: darkgrey;
+}
+
+.img {
+  width: 120px;
+  height: 100px;
+  border-radius: 10px;
+}
+
+@keyframes loadtitle {
+  0% {
+    background-color: darkgrey;
+  }
+  50% {
+    background-color: gray;
+  }
+  100% {
+    background-color: darkgray;
+  }
+}
